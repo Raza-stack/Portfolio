@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             {/* Social Icons with Animation */}
             <div className="flex items-center space-x-4 ml-8">
               <motion.a
-                href="https://github.com/yourusername"
+                href="https://github.com/Raza-stack"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
               </motion.a>
 
               <motion.a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/raza-ansari-frontend-developer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
               </motion.a>
 
               <motion.a
-                href="https://instagram.com/yourusername"
+                href="https://www.instagram.com/build.with_raza/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -133,9 +133,9 @@ const Navbar: React.FC = () => {
 
             {/* Social Icons in Mobile View */}
             <div className="flex items-center space-x-4 px-3 pt-4 pb-3">
-              {[['github', 'https://github.com/yourusername', <Github size={20} />],
-              ['linkedin', 'https://linkedin.com/in/yourusername', <Linkedin size={20} />],
-              ['instagram', 'https://instagram.com/yourusername', <Instagram size={20} />]
+              {[['github', 'https://github.com/Raza-stack', <Github size={20} />],
+              ['linkedin', 'https://www.linkedin.com/in/raza-ansari-frontend-developer/', <Linkedin size={20} />],
+              ['instagram', 'https://www.instagram.com/build.with_raza/', <Instagram size={20} />]
               ].map(([type, url, Icon], i) => (
                 <motion.a
                   key={type}
