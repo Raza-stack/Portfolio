@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+         pacifico: ['Pacifico', 'cursive'],
       },
       colors: {
         cyan: {

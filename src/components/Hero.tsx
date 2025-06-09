@@ -4,14 +4,14 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center bg-slate-900 overflow-hidden">
+    <section id="home" className="relative h-screen flex items-center bg-slate-900 overflow-hidden text-black">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900"></div>
+      <div className="absolute inset-0 bg-white"></div>
 
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-1/4 left-1/3 w-96 h-96 bg-cyan-500 rounded-full opacity-10 blur-3xl"
+          className="absolute top-1/4 left-1/3 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl"
           animate={{ x: [0, 50, 0], y: [0, 30, 0] }}
           transition={{ repeat: Infinity, duration: 15, ease: "easeInOut" }}
         />
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                className="text-cyan-400"
+                className="text-black"
               >
                 Hi, I'm Raza
               </motion.span>
@@ -44,14 +44,14 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}
-              className="block mt-2 text-2xl md:text-4xl"
+              className="block mt-2 text-2xl md:text-4xl text-black"
             >
               Web Developer & Designer
             </motion.span>
           </motion.h1>
 
           <motion.p
-            className="text-slate-300 text-xl max-w-2xl mb-8"
+            className="text-black text-xl max-w-2xl mb-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1, duration: 0.5 }}
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           >
             <motion.a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 bg-cyan-500 text-white font-medium rounded-md shadow-lg hover:bg-cyan-600 transition-colors group"
+              className="inline-flex items-center px-6 py-3 bg-blue-500 text-white font-medium rounded-md shadow-lg hover:bg-blue-600 transition-colors group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

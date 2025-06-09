@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-cyan-500 mx-auto mb-8"></div>
+          <div className="w-20 h-1 bg-blue-400 mx-auto mb-8"></div>
           <p className="max-w-2xl mx-auto text-slate-600">
             Have a project in mind or want to learn more about our services?
             We'd love to hear from you!
@@ -121,12 +121,12 @@ const Contact: React.FC = () => {
 
               {isSubmitted ? (
                 <motion.div
-                  className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 flex items-center"
+                  className="bg-blue-50 border border-green-200 text-black rounded-lg p-4 flex items-center"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <CheckCircle className="text-green-500 mr-3" size={24} />
+                  <CheckCircle className="text-blue-500 mr-3" size={24} />
                   <div>
                     <p className="font-medium">Message sent successfully!</p>
                     <p className="text-sm">We'll get back to you as soon as possible.</p>
@@ -145,7 +145,7 @@ const Contact: React.FC = () => {
                         name="name"
                         value={formState.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         required
                       />
                     </div>
@@ -159,7 +159,7 @@ const Contact: React.FC = () => {
                         name="email"
                         value={formState.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         required
                       />
                     </div>
@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
                       name="subject"
                       value={formState.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       required
                     />
                   </div>
@@ -190,14 +190,14 @@ const Contact: React.FC = () => {
                       value={formState.message}
                       onChange={handleChange}
                       rows={5}
-                      className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       required
                     />
                   </div>
 
                   <motion.button
                     type="submit"
-                    className="inline-flex items-center px-6 py-3 bg-cyan-500 text-white font-medium rounded-md shadow-md hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 transition-colors"
+                    className="inline-flex items-center px-6 py-3 bg-blue-500 text-white font-medium rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     disabled={isSubmitting}
@@ -238,13 +238,13 @@ const Contact: React.FC = () => {
                 >
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mr-4">
-                      <div className="w-10 h-10 bg-cyan-100 text-cyan-600 rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
                         {item.icon}
                       </div>
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-slate-800 mb-1">{item.title}</h4>
-                      <a href={item.link} className="text-slate-600 hover:text-cyan-600 transition-colors" target="_blank" rel="noopener noreferrer">
+                      <a href={item.link} className="text-slate-600 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">
                         {item.details}
                       </a>
                     </div>
@@ -264,7 +264,7 @@ const Contact: React.FC = () => {
               <p className="mb-4">Get a free consultation and let us help you bring your vision to life.</p>
               <a
                 href="tel:+919637082492"
-                className="inline-block w-full text-center px-6 py-3 bg-cyan-500 font-medium rounded-md hover:bg-cyan-600 transition-colors"
+                className="inline-block w-full text-center px-6 py-3 bg-blue-500 font-medium rounded-md hover:bg-blue-600 transition-colors"
               >
                 Schedule a Call
               </a>

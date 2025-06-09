@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
 
   const navbarClass = scrolled
     ? 'bg-white shadow-md text-slate-800'
-    : 'bg-transparent text-white';
+    : 'bg-white text-black';
 
   return (
     <motion.nav
@@ -43,8 +43,8 @@ const Navbar: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            <a href="#home" className="flex items-center space-x-2 text-4xl font-bold">
-              <span>Raza</span>
+            <a href="#home" className="flex items-center space-x-2 text-3xl ">
+              <span className='font-pacifico'>Build with Raza</span>
             </a>
           </motion.div>
 
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
                 <motion.a
                   key={link.name}
                   href={link.href}
-                  className="font-medium hover:text-cyan-400 transition-colors"
+                  className="font-medium hover:text-blue-500 transition-colors"
                   whileHover={{ scale: 1.1 }}
                 >
                   {link.name}
@@ -134,8 +134,8 @@ const Navbar: React.FC = () => {
             {/* Social Icons in Mobile View */}
             <div className="flex items-center space-x-4 px-3 pt-4 pb-3">
               {[['github', 'https://github.com/yourusername', <Github size={20} />],
-                ['linkedin', 'https://linkedin.com/in/yourusername', <Linkedin size={20} />],
-                ['instagram', 'https://instagram.com/yourusername', <Instagram size={20} />]
+              ['linkedin', 'https://linkedin.com/in/yourusername', <Linkedin size={20} />],
+              ['instagram', 'https://instagram.com/yourusername', <Instagram size={20} />]
               ].map(([type, url, Icon], i) => (
                 <motion.a
                   key={type}
@@ -144,11 +144,10 @@ const Navbar: React.FC = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`group p-2 rounded-full transition-colors duration-300 bg-transparent ${
-                    type === 'github' ? 'hover:bg-[#333]' :
-                    type === 'linkedin' ? 'hover:bg-[#0077B5]' :
-                    'hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600'
-                  }`}
+                  className={`group p-2 rounded-full transition-colors duration-300 bg-transparent ${type === 'github' ? 'hover:bg-[#333]' :
+                      type === 'linkedin' ? 'hover:bg-[#0077B5]' :
+                        'hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600'
+                    }`}
                 >
                   <span className="text-white">{Icon}</span>
                 </motion.a>

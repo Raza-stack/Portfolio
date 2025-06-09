@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-slate-900 text-white pt-16 pb-6">
+    <footer className="bg-black text-white pt-16 pb-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <span className="text-6xl font-bold">Raza</span>
+              <span className="text-4xl font-bold font-poppins">Build with Raza</span>
             </motion.div>
             <motion.p
               className="text-slate-400 mb-6 max-w-md"
@@ -138,7 +138,7 @@ const Footer: React.FC = () => {
                   <li key={linkIndex}>
                     <a
                       href={link.href}
-                      className="text-slate-400 hover:text-cyan-400 transition-colors"
+                      className="text-slate-400 hover:text-blue-400 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -162,7 +162,7 @@ const Footer: React.FC = () => {
             </motion.p>
             <motion.button
               onClick={scrollToTop}
-              className="absolute right-0 -top-6 w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center text-white hover:bg-cyan-600 transition-colors"
+              className="absolute right-0 -top-6 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors"
               whileHover={{ y: -5 }}
               whileTap={{ scale: 0.95 }}
               aria-label="Scroll to top"

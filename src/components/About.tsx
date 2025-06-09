@@ -3,43 +3,52 @@ import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white font-poppins">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        {/* Section Heading */}
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">About Us</h2>
-          <div className="w-20 h-1 bg-cyan-500 mx-auto mb-8"></div>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
+            About <span className="text-blue-500">Raza</span>
+          </h2>
+          <p className="text-blue-500 max-w-xl mx-auto text-lg">
+            Crafting impactful web experiences that drive results and build trust.
+          </p>
+          <div className="w-20 h-1 bg-blue-500 mx-auto mt-6"></div>
         </motion.div>
 
+        {/* Content */}
         <div className="grid md:grid-cols-1 gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">Building Digital Experiences That Deliver Results</h3>
-            <p className="text-slate-600 mb-6">
-              Welcome to our agency — your trusted partner in the digital world. I'm a passionate web developer and founder of this agency, and we specialize in creating modern, responsive, and high-converting websites that help businesses grow online.
+            <h3 className="text-2xl md:text-3xl font-semibold text-slate-800 mb-6">
+              Meet Raza — Your Partner in Digital Growth
+            </h3>
+            <p className="text-slate-600 mb-5 leading-relaxed">
+              I'm Raza, a dedicated web developer and founder of this digital agency. With a deep passion for technology and design, I help brands turn ideas into powerful digital platforms.
             </p>
-            <p className="text-slate-600 mb-6">
-              Whether you're a startup looking for your first website or an established brand in need of a digital refresh, we tailor every project to your goals. Our focus is on clean design, strong performance, and user-friendly experiences that leave a lasting impression.
+            <p className="text-slate-600 mb-5 leading-relaxed">
+              My mission is simple: deliver visually stunning, high-performing websites that not only look great but also convert. From clean UI/UX to seamless responsiveness, every detail is crafted with precision and purpose.
             </p>
-            <p className="text-slate-600 mb-8">
-              Let's work together to bring your vision to life and build a strong online presence that stands out from the competition.
+            <p className="text-slate-600 mb-8 leading-relaxed">
+              Whether you're launching your first business site or revamping an existing one, I’ll tailor a solution to fit your unique goals. Let's collaborate and create something extraordinary.
             </p>
             <motion.a
               href="#services"
-              className="inline-block px-6 py-3 bg-slate-800 text-white font-medium rounded-md hover:bg-slate-700 transition-colors"
+              className="inline-block px-7 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              View Our Services
+              Explore My Services
             </motion.a>
           </motion.div>
         </div>
@@ -49,3 +58,4 @@ const About: React.FC = () => {
 };
 
 export default About;
+
